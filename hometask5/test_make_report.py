@@ -3,7 +3,6 @@ import random
 def test_is_new_user_registered_successfully(browser):
     link = "http://selenium1py.pythonanywhere.com/"
     browser.get(link)
-    browser.implicitly_wait(5)
 
     button1 = browser.find_element_by_id("login_link")
     button1.click()
